@@ -1,123 +1,598 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.1">
-  <style type="text/css">
-    p.p2 {margin: 0.0px 0.0px 30.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #535353; -webkit-text-stroke: #535353}
-    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626}
-    li.li6 {margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626}
-    span.s1 {font-kerning: none}
-    span.s2 {-webkit-text-stroke: 0px #000000}
-    span.s3 {font-kerning: none; background-color: #f2f2f2}
-    ul.ul1 {list-style-type: disc}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy · Gizlilik Politikası | Verbi</title>
+<meta name="description" content="How the Verbi apps for iPhone, iPad and Android handle your data: what is sent for transcription and summaries, which providers receive it, how long it is kept, and your rights. In English and Turkish.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#5532BD">
+<link rel="canonical" href="https://theverbi.com/privacy-policy/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Verbi">
+<meta property="og:url" content="https://theverbi.com/privacy-policy/">
+<meta property="og:title" content="Verbi Privacy Policy">
+<meta property="og:description" content="How the Verbi apps for iPhone, iPad and Android handle your data: what is sent for transcription and summaries, which providers receive it, how long it is kept, and your rights. In English and Turkish.">
+<meta property="og:image" content="https://theverbi.com/assets/og.jpg">
+<link rel="icon" type="image/png" href="https://theverbi.com/assets/favicon-64.png">
+<link rel="apple-touch-icon" href="https://theverbi.com/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300..800&display=swap">
+<style>
+:root {
+  --stage: #5532BD; --on-stage: #FFFFFF; --on-stage-2: #E4DEF7; --stage-rule: rgba(255, 255, 255, .34);
+  --paper: #FBFAFE; --surface: #FFFFFF; --ink: #1D1436; --ink-2: #5B5474; --rule: #E4DFF2;
+  --accent: #5532BD; --seg-bg: #EFEBF8; --focus: var(--accent);
+  --font: "Host Grotesk", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --t-14: .875rem; --t-16: 1rem; --t-18: 1.125rem; --t-21: 1.3125rem; --t-24: 1.5rem;
+  --gutter: clamp(16px, 4vw, 48px); --max: 1240px; --measure: 720px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --stage: #4B2BB0; --on-stage-2: #E2DCF6;
+    --paper: #130E25; --surface: #1C1535; --ink: #EEEAF9; --ink-2: #A9A1C6; --rule: #2D2550;
+    --accent: #B7A2FF; --seg-bg: #231B40;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --stage: #4B2BB0; --on-stage-2: #E2DCF6;
+  --paper: #130E25; --surface: #1C1535; --ink: #EEEAF9; --ink-2: #A9A1C6; --rule: #2D2550;
+  --accent: #B7A2FF; --seg-bg: #231B40;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 400 var(--t-18)/1.6 var(--font);
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4 { text-wrap: balance; overflow-wrap: break-word; }
+p, li { text-wrap: pretty; }
+a { color: var(--accent); text-underline-offset: .18em; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+[id] { scroll-margin-top: 16px; }
+.wrap { max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+
+.stage { position: relative; isolation: isolate; background: var(--stage); color: var(--on-stage); --focus: var(--on-stage); overflow-x: clip; }
+.stage::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px; opacity: .3; mix-blend-mode: overlay;
+}
+.stage a { color: inherit; }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; }
+.wordmark { font-size: var(--t-24); font-weight: 760; letter-spacing: -.035em; text-decoration: none; }
+.lang { display: flex; gap: 4px; }
+.lang a {
+  display: inline-grid; place-items: center;
+  font: 600 var(--t-14)/1 var(--font); color: var(--on-stage-2); text-decoration: none;
+  border: 1px solid var(--stage-rule); border-radius: 999px;
+  min-width: 44px; min-height: 44px; padding: 0 14px; transition: color .2s;
+}
+.lang a:hover { color: var(--on-stage); }
+.intro { max-width: 940px; padding-block: clamp(20px, 5vw, 56px) clamp(40px, 7vw, 80px); }
+.kicker { margin: 0 0 14px; font-size: var(--t-16); font-weight: 600; color: var(--on-stage-2); }
+.intro h1 { margin: 0; font-size: clamp(2.25rem, 7vw, 4.5rem); font-weight: 760; line-height: 1.02; letter-spacing: -.035em; }
+.lede { margin: 20px 0 0; max-width: 52ch; font-size: clamp(var(--t-18), 2.4vw, var(--t-21)); line-height: 1.5; color: var(--on-stage-2); }
+
+main { padding-block: clamp(32px, 6vw, 72px) clamp(48px, 8vw, 96px); }
+article { max-width: var(--measure); }
+article + article { margin-top: clamp(72px, 10vw, 128px); padding-top: clamp(40px, 6vw, 64px); border-top: 1px solid var(--rule); }
+.doc-head h2 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); font-weight: 760; line-height: 1.05; letter-spacing: -.03em; }
+.dates { margin: 10px 0 0; font-size: var(--t-16); color: var(--ink-2); }
+.toc { margin: 28px 0 8px; padding: 20px 24px; border: 1px solid var(--rule); border-radius: 18px; background: var(--surface); }
+.toc-title { margin: 0 0 8px; font-size: var(--t-14); font-weight: 650; color: var(--ink-2); text-transform: uppercase; letter-spacing: .06em; }
+.toc ol { margin: 0; padding: 0; list-style: none; font-size: var(--t-16); }
+.toc li { padding-block: 2px; break-inside: avoid; }
+@media (min-width: 640px) { .toc ol { columns: 2; column-gap: 24px; } }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.doc h3 { margin: clamp(40px, 6vw, 56px) 0 14px; font-size: clamp(1.5rem, 3.4vw, 2rem); font-weight: 700; line-height: 1.15; letter-spacing: -.02em; }
+.doc h4 { margin: 32px 0 10px; font-size: var(--t-21); font-weight: 650; line-height: 1.3; letter-spacing: -.01em; }
+.doc p { margin: 0 0 14px; }
+.doc ul { margin: 0 0 16px; padding-left: 1.2em; display: grid; gap: 8px; }
+.doc li::marker { color: var(--accent); }
+.doc strong { font-weight: 650; }
+
+.foot { border-top: 1px solid var(--rule); padding-block: 28px 36px; font-size: var(--t-14); color: var(--ink-2); }
+.foot-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 28px; }
+.foot nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.foot a { color: inherit; }
+.foot a:hover { color: var(--ink); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
+@media print {
+  .stage, .toc, .foot { background: none; color: #000; }
+  .stage::before, .lang, .toc { display: none; }
+}
+</style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414"><span class="s1"><b>Privacy Policy</b></span></h1>
-<p class="p2"><span class="s1"><i>Last Updated: September 13, 2026</i></span></p>
-<p class="p3"><span class="s1">At Verbi ("App"), we take the privacy of our users seriously. This Privacy Policy explains what information is collected when you use our App, how it is used, and how it is protected.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>1. Information We Collect</b></span></h2>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>1.1 Audio Recordings</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">Audio recordings you create using the App are stored locally on your device</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Your audio recordings are never uploaded to our servers</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">If you enable iCloud Sync, your recordings are stored encrypted in Apple's iCloud service</span></li>
+<header class="stage">
+  <div class="wrap">
+    <div class="nav">
+      <a class="wordmark" href="https://theverbi.com/">Verbi</a>
+      <nav class="lang" aria-label="Language / Dil">
+        <a href="#en" hreflang="en" lang="en">English</a>
+        <a href="#tr" hreflang="tr" lang="tr">Türkçe</a>
+      </nav>
+    </div>
+    <div class="intro">
+      <p class="kicker">Verbi</p>
+      <h1>Privacy Policy</h1>
+      <p class="lede">Effective 19 October 2026. The full policy is below in English, followed by the Turkish version. <span lang="tr">Türkçe metin için <a href="#tr">buraya</a> dokunun.</span></p>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<article id="en" lang="en" aria-labelledby="en-title">
+  <header class="doc-head">
+    <h2 id="en-title">Privacy Policy</h2>
+    <p class="dates">Effective date: 19 October 2026 · Last updated: 19 October 2026</p>
+  </header>
+  <nav class="toc" aria-label="Contents">
+    <p class="toc-title">Contents</p>
+    <ol>
+      <li><a href="#en-s1">1. Who we are</a></li>
+      <li><a href="#en-s2">2. In short</a></li>
+      <li><a href="#en-s3">3. What we process and why</a></li>
+      <li><a href="#en-s4">4. The &quot;Share usage data&quot; switch</a></li>
+      <li><a href="#en-s5">5. Who receives your data</a></li>
+      <li><a href="#en-s6">6. Transfers abroad</a></li>
+      <li><a href="#en-s7">7. How long we keep data</a></li>
+      <li><a href="#en-s8">8. Legal bases at a glance</a></li>
+      <li><a href="#en-s9">9. Your rights</a></li>
+      <li><a href="#en-s10">10. People in your recordings</a></li>
+      <li><a href="#en-s11">11. Children</a></li>
+      <li><a href="#en-s12">12. Security</a></li>
+      <li><a href="#en-s13">13. California residents</a></li>
+      <li><a href="#en-s14">14. Changes</a></li>
+      <li><a href="#en-s15">15. Contact</a></li>
+    </ol>
+  </nav>
+  <div class="doc">
+<p>This policy explains what personal data the Verbi apps for iPhone, iPad and Android process, why, who receives it, how long it is kept and what rights you have. It is published in English and Turkish; both versions have the same meaning.</p>
+<h3 id="en-s1">1. Who we are</h3>
+<p>Verbi is developed and operated by Mustafa Onur Ilgaz, an independent developer based in Türkiye. He is the data controller for the personal data described in this policy under the EU and UK General Data Protection Regulation (GDPR) and Turkey&#x27;s Personal Data Protection Law No. 6698 (KVKK).</p>
+<p>Contact: <a href="mailto:theverbiapp@gmail.com">theverbiapp@gmail.com</a></p>
+<h3 id="en-s2">2. In short</h3>
+<ul>
+  <li>Verbi has no user accounts. We do not ask for your name, email address or phone number.</li>
+  <li>Your recordings, transcripts, summaries, chats and translations are stored on your device. Verbi has no cloud sync, and we do not keep copies of them on our servers.</li>
+  <li>To turn speech into text, Verbi sends your audio to speech-to-text providers (ElevenLabs and OpenAI), usually through our own server. Summaries, chat, translation and title suggestions send transcript text to OpenAI.</li>
+  <li>We use Google Firebase for usage analytics and crash reports, and RevenueCat for subscriptions. The iPhone and iPad app also contains Meta&#x27;s Facebook SDK, which sends app events to Meta.</li>
+  <li>You can turn off usage analytics in Settings. Section 4 explains exactly what that switch does and does not cover.</li>
+  <li>We do not sell your personal data.</li>
 </ul>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>1.2 Transcription and Summary</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">Audio transcription uses Apple's on-device Speech Recognition technology</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">For AI summary generation, only the transcription text (not the audio file) is sent to OpenAI API</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">OpenAI does not use submitted texts to train their models (API policy)</span></li>
+<h3 id="en-s3">3. What we process and why</h3>
+<h4 id="en-s3-1">3.1 Audio and transcription</h4>
+<p><strong>What:</strong> audio you record in Verbi; audio and video files you import or share into Verbi; audio taken from YouTube links you paste (see 3.3); your transcription language, speaker-separation setting and custom vocabulary.</p>
+<p><strong>How:</strong></p>
+<ul>
+  <li>When a recording is transcribed, Verbi uploads the audio file over an encrypted connection to our server (Google Cloud Run, United States). Our server forwards it to ElevenLabs for speech-to-text. If ElevenLabs is unavailable or fails, the audio is sent to OpenAI instead. Long recordings may be sent in parts.</li>
+  <li>When speaker separation is on, short clips (a few seconds each) of up to four voices from the same recording are sent with later parts, so that each speaker keeps the same label throughout the transcript.</li>
+  <li>Live transcription on iPhone and iPad with Verbi Pro, and on Android: your microphone audio is streamed in real time from your device directly to OpenAI.</li>
+  <li>Live transcription on iPhone and iPad on the free plan uses Apple&#x27;s Speech Recognition. Depending on your device and language, Apple may process this audio on your device or on Apple&#x27;s servers.</li>
+  <li>The Android welcome demo uses your phone&#x27;s built-in speech recognition service (usually Google&#x27;s), which may process the audio on its servers.</li>
+  <li>In some situations, for example when our server cannot verify a request, the app may send the request to OpenAI directly from your device instead of through our server.</li>
+  <li>Our server does not store your audio. It holds an upload only in memory while the request is being processed, and it does not log the content.</li>
 </ul>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>1.3 Usage Data</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">We collect anonymous usage statistics to improve app performance and user experience</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">This data includes: app launch count, recording duration, feature usage and other anonymous metrics</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Does not contain personally identifiable information</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Collected using Firebase Analytics</span></li>
+<p><strong>Why:</strong> to give you the transcript you asked for.</p>
+<p><strong>Legal basis:</strong> performance of our contract with you (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c)).</p>
+<h4 id="en-s3-2">3.2 Transcripts and AI features</h4>
+<p><strong>What:</strong> transcript text, including speaker labels and any speaker names you add; the recording&#x27;s title, date and time zone; your custom vocabulary; your questions in the transcript chat, with the earlier messages of that chat; text you translate.</p>
+<p><strong>How:</strong> sent to OpenAI, usually through our server, to:</p>
+<ul>
+  <li>write summaries, automatically after transcription where your plan includes it, or when you ask;</li>
+  <li>suggest a title and tags, when automatic naming is on;</li>
+  <li>correct how your custom vocabulary terms are spelled in the transcript;</li>
+  <li>answer your questions about a transcript;</li>
+  <li>translate a transcript.</li>
 </ul>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>1.4 Subscription Information</b></span></h3>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">In-app purchases are processed through Apple App Store</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Your payment information is managed by Apple and is never seen or stored by us</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Anonymous subscription status tracking is done through RevenueCat service</span></li>
+<p><strong>Why and legal basis:</strong> as in 3.1.</p>
+<h4 id="en-s3-3">3.3 YouTube import</h4>
+<p><strong>What:</strong> the YouTube link you paste.</p>
+<p><strong>How:</strong> the link goes to our extraction server (Google Cloud Run, United States). The server downloads the video&#x27;s audio from YouTube and stores it temporarily in Google Cloud Storage (United States). Your device downloads it through a private link that expires after 6 hours, and the audio is then transcribed as described in 3.1. Stored files are deleted automatically after one day; after deletion, Google Cloud keeps a recoverable copy for up to 7 more days before removing it permanently. Our server logs record the video&#x27;s title and, if an import fails, the technical error message, which may include the video&#x27;s ID. YouTube sees a request from our server, not from your device.</p>
+<p><strong>Why and legal basis:</strong> as in 3.1.</p>
+<h4 id="en-s3-4">3.4 Invite a friend</h4>
+<p><strong>What we store</strong> on our server (Google Cloud Firestore, United States) when you use invites:</p>
+<ul>
+  <li>the anonymous subscription identifier that RevenueCat creates for your installation;</li>
+  <li>your invite code;</li>
+  <li>the code you entered, if any, and the anonymous identifier of the person who invited you;</li>
+  <li>the rewards you earned and the friends counted towards them, with dates;</li>
+  <li>the platform, and a short technical label for how your first transcription was made.</li>
 </ul>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>1.5 Invite Codes</b></span></h3>
-<p class="p3"><span class="s1">If you use the invite-a-friend feature, the following is stored on our servers (Google Cloud Firestore):</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">Your invite code, and the fact that it belongs to your installation</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Which invite code you entered, if you entered one</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">The Premium reward days you have earned and when they expire</span></li>
+<p><strong>Device check:</strong> so that each device can claim a reward only once, we confirm that a request comes from a genuine device.</p>
+<ul>
+  <li>On iPhone and iPad we use Apple&#x27;s DeviceCheck. Apple keeps a per-device flag on its own systems; we store no device identifier.</li>
+  <li>On Android we use Google Play Integrity together with your device&#x27;s Android ID. Our server turns the Android ID into a keyed cryptographic hash and stores only that hash, never the Android ID itself.</li>
 </ul>
-<p class="p3"><span class="s1">You are identified by an anonymous subscription identifier generated by RevenueCat. We do not store your name, email address or phone number, and this data is never linked to your recordings, transcripts or summaries, which continue never to leave your device except as described in 1.2.</span></p>
-<p class="p3"><span class="s1"><b>Device check.</b> So that each device can claim a reward only once, we confirm that a request comes from a genuine device:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">On iOS we use Apple's DeviceCheck. Apple keeps the per-device flag on Apple's own systems; we store no device identifier.</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">On Android we use Google Play Integrity together with your device's Android ID. <b>We do not store the Android ID itself</b> — our server converts it into an irreversible cryptographic hash, and only that hash is kept.</span></li>
+<p>Reward days are added to your subscription through RevenueCat.</p>
+<p><strong>Why:</strong> to run the invite programme and to prevent abuse.</p>
+<p><strong>Legal basis:</strong> performance of the programme you join (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c)) and our legitimate interest in preventing fraud (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)).</p>
+<h4 id="en-s3-5">3.5 Subscriptions and purchases</h4>
+<ul>
+  <li>Payments are processed by Apple (App Store) or Google (Google Play). We never see your card details.</li>
+  <li>RevenueCat manages subscription status. It receives an anonymous app user ID, your purchase and subscription history from the store, and technical information about the app and device.</li>
+  <li>On iPhone and iPad, the app also gives RevenueCat Apple&#x27;s AdServices attribution token, so that we can see whether a subscription followed a tap on an Apple Search Ads ad. Apple does not require tracking permission for this, and Verbi does not ask for it.</li>
+  <li>Our server reads your subscription status from RevenueCat and adds promotional Premium days for invite rewards.</li>
 </ul>
-<p class="p3"><span class="s1"><b>Retention.</b> Invite records, reward records and the device hash are kept indefinitely, including after you uninstall the App. This is what makes the one-reward-per-device rule work; without it, the reward could be claimed again and again by reinstalling. To request deletion of your invite data, write to theverbiapp@gmail.com.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>2. How We Use Information</b></span></h2>
-<p class="p3"><span class="s1">We use the collected information for the following purposes:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">To provide app functionality</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">To improve user experience</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">To identify and resolve technical issues</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">To develop new features</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">To fulfill legal obligations</span></li>
+<p><strong>Legal basis:</strong> performance of our contract with you (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c)); for the attribution token, our legitimate interest in measuring our advertising (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)).</p>
+<h4 id="en-s3-6">3.6 Usage analytics (Google Firebase / Google Analytics)</h4>
+<p><strong>What:</strong></p>
+<ul>
+  <li>events about how features are used: for example, that a recording was started or saved and how long it was, that a transcription succeeded or failed (with a short error category or technical error description), that a screen or the subscription screen was viewed, or that a setting changed;</li>
+  <li>settings such as your plan, app language, transcription language and chosen use case;</li>
+  <li>a random identifier that Verbi creates for your installation, and the Firebase app instance ID;</li>
+  <li>information Firebase collects automatically, such as device model, operating system, app version, language and approximate location (country, region, city) derived from your IP address;</li>
+  <li>on iPhone and iPad, if you installed Verbi after an Apple Search Ads ad: the campaign, ad group and keyword IDs and the country reported by Apple&#x27;s AdServices service;</li>
+  <li>on Android, Firebase may also collect your device&#x27;s advertising ID, which you can reset or delete in your Android settings.</li>
 </ul>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>3. Data Security</b></span></h2>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">All audio recordings are stored encrypted locally on your device</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">iCloud synchronization uses Apple's end-to-end encryption standard</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">No audio recordings are stored on our servers</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Transcription and summary data are stored locally on your device</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">The only data we hold on our own servers is the invite and reward data described in 1.5; it contains no recordings, transcripts or summaries</span></li>
+<p><strong>Not included:</strong> your recordings, transcripts, summaries, chat messages, search text, YouTube links or invite codes.</p>
+<p>Google Analytics is linked to our Google Ads account so that we can measure our ad campaigns. Ads personalisation is turned off for this link, and Google signals is off.</p>
+<p><strong>Retention:</strong> Google Analytics keeps event-level data for 2 months and user-level data for 14 months from your last activity.</p>
+<p><strong>Why:</strong> to understand how the app is used, to improve it, and to measure our advertising.</p>
+<p><strong>Legal basis:</strong> our legitimate interest (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)). You can object at any time by turning analytics off (section 4).</p>
+<h4 id="en-s3-7">3.7 Crash and error reports (Firebase Crashlytics)</h4>
+<p><strong>What:</strong> crash reports and stack traces; device model, operating system and app version; for errors, technical details such as the HTTP status, file sizes, an error category and the error message returned by the server. We design these reports not to include recordings, transcripts, file names or YouTube links. While usage analytics is on, reports carry the same random installation identifier as analytics.</p>
+<p><strong>Why:</strong> to find and fix faults.</p>
+<p><strong>Legal basis:</strong> our legitimate interest in keeping the app secure and working (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)).</p>
+<p><strong>Retention:</strong> Firebase keeps crash reports and their identifiers for 90 days (<a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy information</a>).</p>
+<h4 id="en-s3-8">3.8 Meta (Facebook) SDK on iPhone and iPad</h4>
+<p>The iPhone and iPad app includes Meta&#x27;s Facebook SDK with automatic app event logging turned on. Without any further action in the app, the SDK sends Meta:</p>
+<ul>
+  <li>events such as the app being installed and opened and, where the SDK detects them, in-app purchases (<a href="https://developers.facebook.com/docs/app-events/automatic-event-collection-detail" rel="noopener">Meta&#x27;s description of these events</a>);</li>
+  <li>with each event, technical information about the device and app: device model, operating system version, app version and build, language, time zone, mobile carrier and free storage space, together with an anonymous identifier that the SDK creates on your device. Like any internet request, this reaches Meta with your IP address.</li>
 </ul>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>4. Third-Party Services</b></span></h2>
-<p class="p3"><span class="s1">The App uses the following third-party services:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Apple iCloud:</b> To synchronize your data across devices (optional)</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>RevenueCat:</b> For subscription management</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>OpenAI:</b> For AI summary generation (transcription text only)</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Firebase:</b> For app performance monitoring and anonymous usage analytics</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Google Cloud:</b> To store invite codes and reward records</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Apple DeviceCheck (iOS) and Google Play Integrity (Android):</b> To confirm that a reward is claimed only once per device</span></li>
+<p>We have turned off the SDK&#x27;s collection of the advertising identifier (IDFA), and Verbi does not ask for tracking permission. The SDK does not receive your recordings, transcripts or other content.</p>
+<p><strong>Why:</strong> to measure app installs and the performance of our advertising.</p>
+<p><strong>Legal basis:</strong> our legitimate interest in measuring our advertising (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)).</p>
+<p>The SDK runs regardless of the &quot;Share usage data&quot; switch, and the app currently has no setting that turns it off. Meta processes this data under its own <a href="https://www.facebook.com/privacy/policy/" rel="noopener">privacy policy</a>. The Android app does not contain the Meta SDK.</p>
+<h4 id="en-s3-9">3.9 Security and server logs</h4>
+<ul>
+  <li>Firebase App Check (Apple App Attest on iPhone and iPad, Google Play Integrity on Android) confirms that requests to our server come from a genuine copy of Verbi.</li>
+  <li>Firebase Remote Config downloads feature settings using a Firebase installation ID.</li>
+  <li>Our servers (Google Cloud Run) automatically log each request: time, IP address, user agent (app and system version), path, status, size and duration. We use these logs for security, to limit abuse (for example, with rate limits per IP address) and for troubleshooting. They are kept for 30 days.</li>
 </ul>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>5. User Rights</b></span></h2>
-<p class="p3"><span class="s1">Our users have the following rights:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Right to Access:</b> Your recordings, transcripts and summaries are stored on your device and you can access them at any time. For the invite data described in 1.5, write to theverbiapp@gmail.com.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Right to Deletion:</b> You can permanently delete your recordings from within the app. Invite and reward data is held on our servers and is not removed by uninstalling; to have it deleted, write to theverbiapp@gmail.com.</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Data Portability:</b> You can export your recordings</span></li>
-  <li class="li6"><span class="s2"><b></b></span><span class="s1"><b>Right to Object:</b> You can object to data processing and delete the app</span></li>
+<p><strong>Legal basis:</strong> our legitimate interest in the security of our service (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)).</p>
+<h4 id="en-s3-10">3.10 Calendar (optional meeting reminders)</h4>
+<p>If you turn on meeting reminders and allow calendar access, Verbi reads the titles and times of your upcoming events on your device, only to schedule local reminder notifications. Calendar data is not sent to our servers or to AI providers. On iPhone and iPad, when you switch a reminder on or off for an event, usage analytics records an internal identifier of that event, not its title.</p>
+<h4 id="en-s3-11">3.11 Data on your device and backups</h4>
+<ul>
+  <li>Recordings, transcripts, summaries, chats, translations, vocabulary and settings are kept in Verbi&#x27;s private storage on your device.</li>
+  <li>On the free plan, recordings are deleted automatically after 15 days. Recordings you delete stay in &quot;Deleted Recordings&quot; for 30 days and are then removed.</li>
+  <li>If you use device backups, your Verbi data, including recordings, may be included in them: on iPhone and iPad in iCloud or computer backups, under Apple&#x27;s privacy policy; on Android in Android backup, under Google&#x27;s privacy policy.</li>
+  <li>Uninstalling Verbi deletes its data on your device. It does not delete your backups, or the data described in this policy that is kept on our servers or by our providers.</li>
 </ul>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>6. Children's Privacy</b></span></h2>
-<p class="p3"><span class="s1">Our App does not target children under 13 and does not knowingly collect information from this age group.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>7. Changes to Privacy Policy</b></span></h2>
-<p class="p3"><span class="s1">We may update this Privacy Policy from time to time. When significant changes occur, we will notify you through an in-app notification.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>8. GDPR Compliance</b></span></h2>
-<p class="p3"><span class="s1">Under the General Data Protection Regulation (GDPR):</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">Your personal data is processed lawfully and fairly</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Data is kept accurate and up to date</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Processed for specific, explicit and legitimate purposes</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Adequate, relevant and limited to what is necessary</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Kept for no longer than necessary</span></li>
+<h3 id="en-s4">4. The &quot;Share usage data&quot; switch</h3>
+<p>You find it in the app under Settings &gt; Privacy. Turning it off:</p>
+<ul>
+  <li>stops usage analytics (3.6) and resets the Firebase app instance ID;</li>
+  <li>removes the analytics identifier from crash reports.</li>
 </ul>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s1"><b>9. California Privacy Rights (CCPA)</b></span></h2>
-<p class="p3"><span class="s1">California residents have additional rights including:</span></p>
-<ul class="ul1">
-  <li class="li6"><span class="s2"></span><span class="s1">Right to know what personal information is collected</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Right to delete personal information</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Right to opt-out of the sale of personal information (we do not sell data)</span></li>
-  <li class="li6"><span class="s2"></span><span class="s1">Right to non-discrimination for exercising privacy rights</span></li>
+<p>It does not stop:</p>
+<ul>
+  <li>crash and error reports (3.7);</li>
+  <li>the Meta SDK on iPhone and iPad (3.8);</li>
+  <li>the Apple Search Ads attribution token sent to RevenueCat (3.5), or the app&#x27;s check with Apple&#x27;s AdServices service of whether the install followed an ad (with the switch off, the answer is not sent to analytics);</li>
+  <li>server logs, App Check and Remote Config (3.9);</li>
+  <li>what the features you use need, such as sending audio for transcription.</li>
 </ul>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626"><span class="s3"><b>10. Contact Us</b><b></b></span></h2>
-<p class="p3"><span class="s3">For questions about our Privacy Policy:</span></p>
-<p class="p3"><span class="s3"><b>Email:</b> theverbiapp@gmail.com</span></p>
+<h3 id="en-s5">5. Who receives your data</h3>
+<p>We do not sell your personal data. We share it only with these providers, for the purposes described above:</p>
+<ul>
+  <li><strong>Google.</strong> Google Cloud (Cloud Run, Cloud Storage, Firestore, Cloud Logging) for our servers, YouTube import, invite records and server logs. Firebase (Analytics, Crashlytics, Remote Config, App Check) and the Google Ads link for analytics, crash reports, feature settings, app integrity and ad measurement. On Android, Google Play for payments, Play Integrity, the install referrer and in-app reviews, and the system speech recognition used in the welcome demo. <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>, <a href="https://cloud.google.com/terms/cloud-privacy-notice" rel="noopener">Google Cloud Privacy Notice</a>, <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy information</a>.</li>
+  <li><strong>YouTube (Google).</strong> Our server requests the video you chose; YouTube sees our server, not your device.</li>
+  <li><strong>ElevenLabs.</strong> Speech-to-text. <a href="https://elevenlabs.io/privacy-policy" rel="noopener">Privacy policy</a>.</li>
+  <li><strong>OpenAI.</strong> Speech-to-text, live transcription, summaries, titles, vocabulary correction, chat and translation. <a href="https://openai.com/policies/privacy-policy/" rel="noopener">Privacy policy</a>, <a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener">API data controls</a>.</li>
+  <li><strong>RevenueCat.</strong> Subscription management and invite rewards. <a href="https://www.revenuecat.com/privacy" rel="noopener">Privacy policy</a>.</li>
+  <li><strong>Apple</strong> (iPhone and iPad). Payments, Speech Recognition for the free live preview, App Attest and DeviceCheck, Apple Search Ads attribution. <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>.</li>
+  <li><strong>Meta</strong> (iPhone and iPad). Automatic app events (3.8). <a href="https://www.facebook.com/privacy/policy/" rel="noopener">Meta Privacy Policy</a>.</li>
+</ul>
+<p><strong>What the AI providers keep.</strong> We do not ask OpenAI or ElevenLabs to store your content for us.</p>
+<ul>
+  <li>OpenAI states that data sent to its API is not used to train its models, and that by default it keeps abuse-monitoring logs for up to 30 days; for its file speech-to-text endpoint it lists no abuse-monitoring retention (<a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener">OpenAI: data controls in the API</a>).</li>
+  <li>ElevenLabs keeps data according to its own <a href="https://elevenlabs.io/privacy-policy" rel="noopener">privacy policy</a>.</li>
+</ul>
+<p>We may also disclose data when the law requires it, for example to a court or a public authority.</p>
+<h3 id="en-s6">6. Transfers abroad</h3>
+<p>Our servers and most of our providers are outside Türkiye and outside the EEA and the UK. When you use Verbi, your data is therefore transferred abroad to these providers:</p>
+<ul>
+  <li>Google: United States (our servers and storage are in Google Cloud&#x27;s us-central1 region); Firebase may process data anywhere Google maintains facilities.</li>
+  <li>OpenAI: United States.</li>
+  <li>ElevenLabs: United States; its privacy policy states that personal information is transferred to the United States for storage.</li>
+  <li>RevenueCat: United States.</li>
+  <li>Apple and Meta: the United States and other countries where they operate.</li>
+</ul>
+<p>Each provider&#x27;s privacy information, linked in section 5, describes how it protects data it receives from other countries.</p>
+<h3 id="en-s7">7. How long we keep data</h3>
+<ul>
+  <li>Recordings, transcripts, summaries and chats on your device: until you delete them. On the free plan, recordings are deleted after 15 days; &quot;Deleted Recordings&quot; is emptied after 30 days.</li>
+  <li>Audio on our server: not stored; held in memory only while a request is processed.</li>
+  <li>YouTube audio in Cloud Storage: deleted after 1 day, then recoverable for up to 7 more days before it is removed permanently.</li>
+  <li>Server logs (IP address, user agent, YouTube video titles): 30 days.</li>
+  <li>Invite records: until you ask us to delete them (section 9).</li>
+  <li>Google Analytics: 2 months for event data, 14 months for user-level data.</li>
+  <li>Crash reports: 90 days.</li>
+  <li>OpenAI, ElevenLabs, RevenueCat, Apple, Meta and Google, beyond the items above: according to their own policies, linked in section 5.</li>
+</ul>
+<h3 id="en-s8">8. Legal bases at a glance</h3>
+<ul>
+  <li><strong>Performance of a contract</strong> (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c)): transcription, live transcription, summaries, chat, translation, title suggestions, vocabulary correction, YouTube import, subscriptions and the invite programme.</li>
+  <li><strong>Legitimate interests</strong> (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)): usage analytics, crash reports, ad attribution (Apple Search Ads, the Google Ads link, the Meta SDK), fraud prevention in the invite programme, security and server logs. You can object at any time (section 9); for analytics you can also use the switch described in section 4.</li>
+  <li><strong>Legal obligation</strong> (GDPR Art. 6(1)(c); KVKK Art. 5(2)(ç)): when the law requires us to keep or disclose data, for example to answer a court or a public authority, and to answer your requests under data protection law.</li>
+</ul>
+<h3 id="en-s9">9. Your rights</h3>
+<p>Depending on where you live, you have the right to access your personal data, correct it, delete it, restrict or object to its processing, and receive it in a portable format. Under the KVKK (Art. 11) you can also ask whether your data is processed, for what purpose and to whom it is transferred, object to a result against you that arises solely from automated analysis, and claim compensation for damage caused by unlawful processing.</p>
+<p>How to use them:</p>
+<ul>
+  <li><strong>Data on your device:</strong> view, export or delete it in the app at any time.</li>
+  <li><strong>Usage analytics:</strong> turn it off under Settings &gt; Privacy &gt; &quot;Share usage data&quot; (section 4).</li>
+  <li><strong>Invite data:</strong> write to theverbiapp@gmail.com with your invite code, which is shown on the invite screen. We delete your invite, code, reward and redemption records. We keep one item: the record that a reward was claimed on your device (on Android, the hashed device ID), with the link to you removed, so that the same device cannot claim a reward again. Premium days already granted stay. Because we hold no name or email address, we cannot find your records without your invite code.</li>
+  <li><strong>Anything else</strong>, including objections and questions about server logs or data held by our providers: write to theverbiapp@gmail.com.</li>
+</ul>
+<p>We answer within 30 days, free of charge. You can also complain to a data protection authority: in Türkiye, the Personal Data Protection Board (Kişisel Verileri Koruma Kurulu); in the EEA or the UK, the authority where you live or work.</p>
+<h3 id="en-s10">10. People in your recordings</h3>
+<p>Recordings can contain other people&#x27;s voices and personal information. Make sure you have the right to record and transcribe them, and tell them or ask for their consent where the law requires it.</p>
+<h3 id="en-s11">11. Children</h3>
+<p>Verbi is not directed at children under 16, and we do not knowingly collect their personal data. If you believe a child under 16 has given us personal data, contact us and we will delete it.</p>
+<h3 id="en-s12">12. Security</h3>
+<p>Connections between the app, our servers and our providers are encrypted (HTTPS/TLS). Data on your device is protected by your device&#x27;s built-in storage protection. Access to our servers is limited to the developer. No system is perfectly secure; if a breach affects your personal data, we will inform you and the authorities as the law requires.</p>
+<h3 id="en-s13">13. California residents</h3>
+<p>We do not sell your personal information. You have the right to know what personal information we collect, to have it deleted or corrected, and not to be discriminated against for using these rights. To use them, write to theverbiapp@gmail.com.</p>
+<h3 id="en-s14">14. Changes</h3>
+<p>When Verbi&#x27;s data practices change, we update this policy and the &quot;Last updated&quot; date at the top. We announce significant changes in the app or in the App Store and Google Play release notes before they take effect.</p>
+<h3 id="en-s15">15. Contact</h3>
+<p>Mustafa Onur Ilgaz (Verbi), Türkiye: <a href="mailto:theverbiapp@gmail.com">theverbiapp@gmail.com</a></p>
+  </div>
+</article>
+
+<article id="tr" lang="tr" aria-labelledby="tr-title">
+  <header class="doc-head">
+    <h2 id="tr-title">Gizlilik Politikası</h2>
+    <p class="dates">Yürürlük tarihi: 19 Ekim 2026 · Son güncelleme: 19 Ekim 2026</p>
+  </header>
+  <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-title">İçindekiler</p>
+    <ol>
+      <li><a href="#tr-s1">1. Veri sorumlusu</a></li>
+      <li><a href="#tr-s2">2. Kısaca</a></li>
+      <li><a href="#tr-s3">3. İşlediğimiz veriler ve amaçları</a></li>
+      <li><a href="#tr-s4">4. &quot;Kullanım verilerini paylaş&quot; anahtarı</a></li>
+      <li><a href="#tr-s5">5. Verilerinizi alanlar</a></li>
+      <li><a href="#tr-s6">6. Yurt dışına aktarım</a></li>
+      <li><a href="#tr-s7">7. Saklama süreleri</a></li>
+      <li><a href="#tr-s8">8. Hukuki sebeplere genel bakış</a></li>
+      <li><a href="#tr-s9">9. Haklarınız</a></li>
+      <li><a href="#tr-s10">10. Kayıtlarınızdaki diğer kişiler</a></li>
+      <li><a href="#tr-s11">11. Çocuklar</a></li>
+      <li><a href="#tr-s12">12. Güvenlik</a></li>
+      <li><a href="#tr-s13">13. Kaliforniya&#x27;da yaşayanlar</a></li>
+      <li><a href="#tr-s14">14. Değişiklikler</a></li>
+      <li><a href="#tr-s15">15. İletişim</a></li>
+    </ol>
+  </nav>
+  <div class="doc">
+<p>Bu metin, Verbi&#x27;nin iPhone, iPad ve Android uygulamalarının hangi kişisel verileri neden işlediğini, kimlere aktardığını, ne kadar sakladığını ve haklarınızı açıklar. 6698 sayılı Kişisel Verilerin Korunması Kanunu&#x27;nun (KVKK) 10. maddesi kapsamındaki aydınlatma metni yerine de geçer. Türkçe ve İngilizce yayımlanır; iki metnin anlamı aynıdır.</p>
+<h3 id="tr-s1">1. Veri sorumlusu</h3>
+<p>Verbi, Türkiye&#x27;de yaşayan bağımsız geliştirici Mustafa Onur Ilgaz tarafından geliştirilir ve işletilir. Bu metinde anlatılan kişisel veriler için KVKK ile AB ve Birleşik Krallık Genel Veri Koruma Tüzüğü (GDPR) kapsamındaki veri sorumlusu odur.</p>
+<p>İletişim: <a href="mailto:theverbiapp@gmail.com">theverbiapp@gmail.com</a></p>
+<h3 id="tr-s2">2. Kısaca</h3>
+<ul>
+  <li>Verbi&#x27;de kullanıcı hesabı yoktur. Adınızı, e-posta adresinizi ya da telefon numaranızı istemeyiz.</li>
+  <li>Kayıtlarınız, transkriptleriniz, özetleriniz, sohbetleriniz ve çevirileriniz cihazınızda saklanır. Verbi&#x27;de bulut eşitleme yoktur; bunların kopyalarını sunucularımızda tutmayız.</li>
+  <li>Konuşmayı metne çevirmek için Verbi sesinizi, çoğunlukla kendi sunucumuz üzerinden, konuşma tanıma sağlayıcılarına (ElevenLabs ve OpenAI) gönderir. Özet, sohbet, çeviri ve başlık önerileri için transkript metni OpenAI&#x27;ye gönderilir.</li>
+  <li>Kullanım analizi ve çökme raporları için Google Firebase&#x27;i, abonelikler için RevenueCat&#x27;i kullanırız. iPhone ve iPad uygulaması ayrıca uygulama olaylarını Meta&#x27;ya gönderen Meta Facebook SDK&#x27;sını içerir.</li>
+  <li>Kullanım analizini Ayarlar&#x27;dan kapatabilirsiniz. Bu anahtarın neyi kapsayıp neyi kapsamadığını 4. bölüm açıklar.</li>
+  <li>Kişisel verilerinizi satmayız.</li>
+</ul>
+<h3 id="tr-s3">3. İşlediğimiz veriler ve amaçları</h3>
+<h4 id="tr-s3-1">3.1 Ses ve transkripsiyon</h4>
+<p><strong>Veri:</strong> Verbi&#x27;de kaydettiğiniz ses; Verbi&#x27;ye aktardığınız ya da paylaştığınız ses ve video dosyaları; yapıştırdığınız YouTube bağlantılarından alınan ses (bkz. 3.3); transkripsiyon diliniz, konuşmacı ayrımı ayarınız ve özel sözlüğünüz.</p>
+<p><strong>Nasıl işlenir:</strong></p>
+<ul>
+  <li>Bir kayıt transkribe edilirken Verbi ses dosyasını şifreli bir bağlantıyla sunucumuza (Google Cloud Run, ABD) yükler. Sunucumuz dosyayı konuşma tanıma için ElevenLabs&#x27;e iletir. ElevenLabs&#x27;e ulaşılamazsa ya da işlem başarısız olursa ses bunun yerine OpenAI&#x27;ye gönderilir. Uzun kayıtlar parçalar halinde gönderilebilir.</li>
+  <li>Konuşmacı ayrımı açıksa, aynı kayıttaki en fazla dört sesten birkaç saniyelik kısa klipler sonraki parçalarla birlikte gönderilir. Böylece her konuşmacı transkript boyunca aynı etiketle görünür.</li>
+  <li>Verbi Pro kullanan iPhone ve iPad&#x27;de ve Android&#x27;de canlı transkripsiyon: mikrofon sesiniz gerçek zamanlı olarak cihazınızdan doğrudan OpenAI&#x27;ye aktarılır.</li>
+  <li>Ücretsiz plandaki iPhone ve iPad&#x27;de canlı transkripsiyon Apple&#x27;ın Konuşma Tanıma hizmetini kullanır. Cihazınıza ve dile göre Apple bu sesi cihazınızda ya da kendi sunucularında işleyebilir.</li>
+  <li>Android&#x27;deki tanıtım demosu telefonunuzun yerleşik konuşma tanıma hizmetini (genellikle Google&#x27;ınkini) kullanır; bu hizmet sesi kendi sunucularında işleyebilir.</li>
+  <li>Bazı durumlarda, örneğin sunucumuz bir isteği doğrulayamadığında, uygulama isteği sunucumuz yerine doğrudan cihazınızdan OpenAI&#x27;ye gönderebilir.</li>
+  <li>Sunucumuz sesinizi saklamaz. Yüklenen dosyayı yalnız istek işlenirken bellekte tutar ve içeriğini günlüğe yazmaz.</li>
+</ul>
+<p><strong>Amaç:</strong> istediğiniz transkripti üretmek.</p>
+<p><strong>Hukuki sebep:</strong> sizinle kurulan sözleşmenin ifası (KVKK m.5/2-c; GDPR m.6/1-b).</p>
+<h4 id="tr-s3-2">3.2 Transkriptler ve yapay zekâ özellikleri</h4>
+<p><strong>Veri:</strong> konuşmacı etiketleri ve konuşmacılara verdiğiniz isimler dahil transkript metni; kaydın başlığı, tarihi ve saat dilimi; özel sözlüğünüz; transkript sohbetinde sorduğunuz sorular ve o sohbetin önceki mesajları; çevirttiğiniz metin.</p>
+<p><strong>Nasıl işlenir:</strong> çoğunlukla sunucumuz üzerinden OpenAI&#x27;ye gönderilir. Amaçlar:</p>
+<ul>
+  <li>planınız kapsıyorsa transkripsiyondan sonra otomatik olarak ya da siz istediğinizde özet yazmak;</li>
+  <li>otomatik adlandırma açıksa başlık ve etiket önermek;</li>
+  <li>özel sözlüğünüzdeki terimlerin transkriptteki yazımını düzeltmek;</li>
+  <li>transkript hakkındaki sorularınızı yanıtlamak;</li>
+  <li>transkripti çevirmek.</li>
+</ul>
+<p><strong>Amaç ve hukuki sebep:</strong> 3.1&#x27;deki gibi.</p>
+<h4 id="tr-s3-3">3.3 YouTube&#x27;dan içe aktarma</h4>
+<p><strong>Veri:</strong> yapıştırdığınız YouTube bağlantısı.</p>
+<p><strong>Nasıl işlenir:</strong> bağlantı ses çıkarma sunucumuza (Google Cloud Run, ABD) gider. Sunucu videonun sesini YouTube&#x27;dan indirir ve geçici olarak Google Cloud Storage&#x27;da (ABD) saklar. Cihazınız sesi 6 saat geçerli özel bir bağlantıdan indirir; ses ardından 3.1&#x27;de anlatıldığı gibi transkribe edilir. Saklanan dosyalar bir gün sonra otomatik olarak silinir; silindikten sonra Google Cloud, dosyayı kalıcı olarak kaldırmadan önce en fazla 7 gün daha geri getirilebilir bir kopya tutar. Sunucu günlüklerimiz videonun başlığını ve içe aktarma başarısız olursa video kimliğini içerebilecek teknik hata mesajını kaydeder. YouTube isteği cihazınızdan değil, sunucumuzdan gelmiş olarak görür.</p>
+<p><strong>Amaç ve hukuki sebep:</strong> 3.1&#x27;deki gibi.</p>
+<h4 id="tr-s3-4">3.4 Arkadaşını davet et</h4>
+<p>Davet özelliğini kullandığınızda sunucumuzda (Google Cloud Firestore, ABD) <strong>saklananlar:</strong></p>
+<ul>
+  <li>RevenueCat&#x27;in kurulumunuz için oluşturduğu anonim abonelik kimliği;</li>
+  <li>davet kodunuz;</li>
+  <li>girdiyseniz kullandığınız kod ve sizi davet eden kişinin anonim kimliği;</li>
+  <li>kazandığınız ödüller ve bunlara sayılan arkadaşlar, tarihleriyle;</li>
+  <li>platform ve ilk transkripsiyonunuzun nasıl yapıldığını gösteren kısa teknik bir etiket.</li>
+</ul>
+<p><strong>Cihaz kontrolü:</strong> her cihazın ödülü yalnız bir kez alabilmesi için isteğin gerçek bir cihazdan geldiğini doğrularız.</p>
+<ul>
+  <li>iPhone ve iPad&#x27;de Apple&#x27;ın DeviceCheck hizmetini kullanırız. Apple cihaz başına bir işareti kendi sistemlerinde tutar; biz cihaz kimliği saklamayız.</li>
+  <li>Android&#x27;de Google Play Integrity&#x27;yi cihazınızın Android kimliğiyle (Android ID) birlikte kullanırız. Sunucumuz Android kimliğini anahtarlı bir kriptografik özete (hash) dönüştürür ve Android kimliğinin kendisini değil, yalnız bu özeti saklar.</li>
+</ul>
+<p>Ödül günleri aboneliğinize RevenueCat aracılığıyla eklenir.</p>
+<p><strong>Amaç:</strong> davet programını yürütmek ve kötüye kullanımı önlemek.</p>
+<p><strong>Hukuki sebep:</strong> katıldığınız programın ifası (KVKK m.5/2-c; GDPR m.6/1-b) ve dolandırıcılığı önlemedeki meşru menfaatimiz (KVKK m.5/2-f; GDPR m.6/1-f).</p>
+<h4 id="tr-s3-5">3.5 Abonelikler ve satın almalar</h4>
+<ul>
+  <li>Ödemeler Apple (App Store) ya da Google (Google Play) tarafından işlenir. Kart bilgilerinizi hiçbir zaman görmeyiz.</li>
+  <li>Abonelik durumunu RevenueCat yönetir. RevenueCat anonim bir uygulama kullanıcı kimliği, mağazadaki satın alma ve abonelik geçmişiniz ve uygulama ile cihaz hakkında teknik bilgiler alır.</li>
+  <li>iPhone ve iPad&#x27;de uygulama, bir aboneliğin Apple Search Ads reklamına dokunulduktan sonra gelip gelmediğini görebilmemiz için RevenueCat&#x27;e Apple&#x27;ın AdServices ilişkilendirme belirtecini de iletir. Apple bunun için izleme izni gerektirmez ve Verbi bu izni istemez.</li>
+  <li>Sunucumuz abonelik durumunuzu RevenueCat&#x27;ten okur ve davet ödülleri için promosyon Premium günleri ekler.</li>
+</ul>
+<p><strong>Hukuki sebep:</strong> sizinle kurulan sözleşmenin ifası (KVKK m.5/2-c; GDPR m.6/1-b); ilişkilendirme belirteci için reklamlarımızı ölçmedeki meşru menfaatimiz (KVKK m.5/2-f; GDPR m.6/1-f).</p>
+<h4 id="tr-s3-6">3.6 Kullanım analizi (Google Firebase / Google Analytics)</h4>
+<p><strong>Veri:</strong></p>
+<ul>
+  <li>özelliklerin nasıl kullanıldığına dair olaylar: örneğin bir kaydın başlatıldığı ya da kaydedildiği ve süresi, bir transkripsiyonun başarılı olduğu ya da kısa bir hata kategorisi veya teknik hata açıklamasıyla başarısız olduğu, bir ekranın ya da abonelik ekranının görüntülendiği, bir ayarın değiştirildiği;</li>
+  <li>planınız, uygulama diliniz, transkripsiyon diliniz ve seçtiğiniz kullanım amacı gibi ayarlar;</li>
+  <li>Verbi&#x27;nin kurulumunuz için oluşturduğu rastgele bir kimlik ve Firebase uygulama örneği kimliği;</li>
+  <li>Firebase&#x27;in otomatik topladığı cihaz modeli, işletim sistemi, uygulama sürümü, dil ve IP adresinizden türetilen yaklaşık konum (ülke, bölge, şehir) gibi bilgiler;</li>
+  <li>iPhone ve iPad&#x27;de, Verbi&#x27;yi bir Apple Search Ads reklamından sonra yüklediyseniz, Apple&#x27;ın AdServices hizmetinin bildirdiği kampanya, reklam grubu ve anahtar kelime kimlikleri ile ülke;</li>
+  <li>Android&#x27;de Firebase cihazınızın reklam kimliğini de toplayabilir; bu kimliği Android ayarlarınızdan sıfırlayabilir ya da silebilirsiniz.</li>
+</ul>
+<p><strong>Dahil olmayanlar:</strong> kayıtlarınız, transkriptleriniz, özetleriniz, sohbet mesajlarınız, arama metinleriniz, YouTube bağlantılarınız ve davet kodlarınız.</p>
+<p>Reklam kampanyalarımızı ölçebilmek için Google Analytics&#x27;i Google Ads hesabımıza bağladık. Bu bağlantıda reklam kişiselleştirmesi kapalıdır; Google sinyalleri de kapalıdır.</p>
+<p><strong>Saklama:</strong> Google Analytics olay düzeyindeki veriyi 2 ay, kullanıcı düzeyindeki veriyi son etkinliğinizden itibaren 14 ay saklar.</p>
+<p><strong>Amaç:</strong> uygulamanın nasıl kullanıldığını anlamak, uygulamayı geliştirmek ve reklamlarımızı ölçmek.</p>
+<p><strong>Hukuki sebep:</strong> meşru menfaatimiz (KVKK m.5/2-f; GDPR m.6/1-f). Analizi kapatarak istediğiniz zaman itiraz edebilirsiniz (4. bölüm).</p>
+<h4 id="tr-s3-7">3.7 Çökme ve hata raporları (Firebase Crashlytics)</h4>
+<p><strong>Veri:</strong> çökme raporları ve yığın izleri; cihaz modeli, işletim sistemi ve uygulama sürümü; hatalarda HTTP durumu, dosya boyutu, hata kategorisi ve sunucunun döndürdüğü hata mesajı gibi teknik ayrıntılar. Bu raporları kayıt, transkript, dosya adı ya da YouTube bağlantısı içermeyecek şekilde tasarladık. Kullanım analizi açık olduğu sürece raporlar analizdeki rastgele kurulum kimliğinin aynısını taşır.</p>
+<p><strong>Amaç:</strong> hataları bulmak ve düzeltmek.</p>
+<p><strong>Hukuki sebep:</strong> uygulamanın güvenli ve çalışır durumda kalmasındaki meşru menfaatimiz (KVKK m.5/2-f; GDPR m.6/1-f).</p>
+<p><strong>Saklama:</strong> Firebase çökme raporlarını ve kimliklerini 90 gün saklar (<a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase gizlilik bilgileri</a>).</p>
+<h4 id="tr-s3-8">3.8 iPhone ve iPad&#x27;de Meta (Facebook) SDK&#x27;sı</h4>
+<p>iPhone ve iPad uygulaması, otomatik uygulama olayı kaydı açık olarak Meta&#x27;nın Facebook SDK&#x27;sını içerir. Uygulamada başka bir işlem yapılmadan SDK Meta&#x27;ya şunları gönderir:</p>
+<ul>
+  <li>uygulamanın yüklenmesi ve açılması gibi olaylar ile, SDK&#x27;nın algıladığı durumlarda uygulama içi satın almalar (<a href="https://developers.facebook.com/docs/app-events/automatic-event-collection-detail" rel="noopener">Meta&#x27;nın bu olaylara ilişkin açıklaması</a>);</li>
+  <li>her olayla birlikte cihaz ve uygulama hakkında teknik bilgiler: cihaz modeli, işletim sistemi sürümü, uygulama sürümü ve derleme numarası, dil, saat dilimi, mobil operatör ve boş depolama alanı ile SDK&#x27;nın cihazınızda oluşturduğu anonim bir kimlik. Her internet isteğinde olduğu gibi bu bilgiler Meta&#x27;ya IP adresinizle birlikte ulaşır.</li>
+</ul>
+<p>SDK&#x27;nın reklam kimliğini (IDFA) toplamasını kapattık; Verbi izleme izni de istemez. SDK kayıtlarınızı, transkriptlerinizi ya da başka içeriğinizi almaz.</p>
+<p><strong>Amaç:</strong> uygulama yüklemelerini ve reklamlarımızın performansını ölçmek.</p>
+<p><strong>Hukuki sebep:</strong> reklamlarımızı ölçmedeki meşru menfaatimiz (KVKK m.5/2-f; GDPR m.6/1-f).</p>
+<p>SDK, &quot;Kullanım verilerini paylaş&quot; anahtarından bağımsız olarak çalışır ve uygulamada şu anda onu kapatan bir ayar yoktur. Meta bu verileri kendi <a href="https://www.facebook.com/privacy/policy/" rel="noopener">gizlilik politikası</a> kapsamında işler. Android uygulaması Meta SDK&#x27;sını içermez.</p>
+<h4 id="tr-s3-9">3.9 Güvenlik ve sunucu günlükleri</h4>
+<ul>
+  <li>Firebase App Check (iPhone ve iPad&#x27;de Apple App Attest, Android&#x27;de Google Play Integrity), sunucumuza gelen isteklerin Verbi&#x27;nin gerçek bir kopyasından geldiğini doğrular.</li>
+  <li>Firebase Remote Config, özellik ayarlarını bir Firebase kurulum kimliği kullanarak indirir.</li>
+  <li>Sunucularımız (Google Cloud Run) her isteği otomatik olarak günlüğe yazar: zaman, IP adresi, kullanıcı aracısı (uygulama ve sistem sürümü), yol, durum, boyut ve süre. Bu günlükleri güvenlik, kötüye kullanımı sınırlama (örneğin IP adresi başına istek sınırı) ve sorun giderme için kullanırız. 30 gün saklanırlar.</li>
+</ul>
+<p><strong>Hukuki sebep:</strong> hizmetimizin güvenliğindeki meşru menfaatimiz (KVKK m.5/2-f; GDPR m.6/1-f).</p>
+<h4 id="tr-s3-10">3.10 Takvim (isteğe bağlı toplantı hatırlatmaları)</h4>
+<p>Toplantı hatırlatmalarını açar ve takvim erişimine izin verirseniz Verbi, yaklaşan etkinliklerinizin başlık ve saatlerini yalnız yerel hatırlatma bildirimleri planlamak için cihazınızda okur. Takvim verisi sunucularımıza ya da yapay zekâ sağlayıcılarına gönderilmez. iPhone ve iPad&#x27;de bir etkinlik için hatırlatmayı açıp kapattığınızda kullanım analizi o etkinliğin başlığını değil, yalnız iç kimliğini kaydeder.</p>
+<h4 id="tr-s3-11">3.11 Cihazınızdaki veriler ve yedekler</h4>
+<ul>
+  <li>Kayıtlar, transkriptler, özetler, sohbetler, çeviriler, sözlük ve ayarlar cihazınızda Verbi&#x27;nin kendi depolama alanında tutulur.</li>
+  <li>Ücretsiz planda kayıtlar 15 gün sonra otomatik olarak silinir. Sildiğiniz kayıtlar 30 gün &quot;Silinmiş Kayıtlar&quot;da kalır, sonra tamamen kaldırılır.</li>
+  <li>Cihaz yedeği kullanıyorsanız kayıtlar dahil Verbi verileriniz bu yedeklere girebilir: iPhone ve iPad&#x27;de iCloud ya da bilgisayar yedeklerine, Apple&#x27;ın gizlilik politikası kapsamında; Android&#x27;de Android yedeğine, Google&#x27;ın gizlilik politikası kapsamında.</li>
+  <li>Verbi&#x27;yi kaldırmak cihazınızdaki verilerini siler. Yedeklerinizi ve bu metinde anlatılan, sunucularımızda ya da sağlayıcılarımızda tutulan verileri silmez.</li>
+</ul>
+<h3 id="tr-s4">4. &quot;Kullanım verilerini paylaş&quot; anahtarı</h3>
+<p>Anahtar uygulamada Ayarlar &gt; Gizlilik bölümündedir. Kapattığınızda:</p>
+<ul>
+  <li>kullanım analizi (3.6) durur ve Firebase uygulama örneği kimliği sıfırlanır;</li>
+  <li>analiz kimliği çökme raporlarından çıkarılır.</li>
+</ul>
+<p>Şunları durdurmaz:</p>
+<ul>
+  <li>çökme ve hata raporları (3.7);</li>
+  <li>iPhone ve iPad&#x27;deki Meta SDK&#x27;sı (3.8);</li>
+  <li>RevenueCat&#x27;e gönderilen Apple Search Ads ilişkilendirme belirteci (3.5) ve uygulamanın, yüklemenin bir reklamdan gelip gelmediğini Apple&#x27;ın AdServices hizmetine sorması (anahtar kapalıyken yanıt analize gönderilmez);</li>
+  <li>sunucu günlükleri, App Check ve Remote Config (3.9);</li>
+  <li>kullandığınız özelliklerin gerektirdikleri, örneğin transkripsiyon için sesin gönderilmesi.</li>
+</ul>
+<h3 id="tr-s5">5. Verilerinizi alanlar</h3>
+<p>Kişisel verilerinizi satmayız. Yalnız aşağıdaki sağlayıcılarla, yukarıda anlatılan amaçlarla paylaşırız:</p>
+<ul>
+  <li><strong>Google.</strong> Sunucularımız, YouTube&#x27;dan içe aktarma, davet kayıtları ve sunucu günlükleri için Google Cloud (Cloud Run, Cloud Storage, Firestore, Cloud Logging). Kullanım analizi, çökme raporları, özellik ayarları, uygulama bütünlüğü ve reklam ölçümü için Firebase (Analytics, Crashlytics, Remote Config, App Check) ve Google Ads bağlantısı. Android&#x27;de ödeme, Play Integrity, yükleme yönlendiricisi ve uygulama içi değerlendirme için Google Play ile tanıtım demosundaki sistem konuşma tanıma hizmeti. <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a>, <a href="https://cloud.google.com/terms/cloud-privacy-notice" rel="noopener">Google Cloud Gizlilik Bildirimi</a>, <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase gizlilik bilgileri</a>.</li>
+  <li><strong>YouTube (Google).</strong> Sunucumuz seçtiğiniz videoyu ister; YouTube cihazınızı değil, sunucumuzu görür.</li>
+  <li><strong>ElevenLabs.</strong> Konuşma tanıma. <a href="https://elevenlabs.io/privacy-policy" rel="noopener">Gizlilik politikası</a>.</li>
+  <li><strong>OpenAI.</strong> Konuşma tanıma, canlı transkripsiyon, özet, başlık, sözlük düzeltmesi, sohbet ve çeviri. <a href="https://openai.com/policies/privacy-policy/" rel="noopener">Gizlilik politikası</a>, <a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener">API veri kontrolleri</a>.</li>
+  <li><strong>RevenueCat.</strong> Abonelik yönetimi ve davet ödülleri. <a href="https://www.revenuecat.com/privacy" rel="noopener">Gizlilik politikası</a>.</li>
+  <li><strong>Apple</strong> (iPhone ve iPad). Ödeme, ücretsiz canlı önizleme için Konuşma Tanıma, App Attest ve DeviceCheck, Apple Search Ads ilişkilendirmesi. <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Gizlilik Politikası</a>.</li>
+  <li><strong>Meta</strong> (iPhone ve iPad). Otomatik uygulama olayları (3.8). <a href="https://www.facebook.com/privacy/policy/" rel="noopener">Meta Gizlilik Politikası</a>.</li>
+</ul>
+<p><strong>Yapay zekâ sağlayıcılarının sakladıkları.</strong> OpenAI&#x27;den ya da ElevenLabs&#x27;ten içeriğinizi bizim için saklamalarını istemeyiz.</p>
+<ul>
+  <li>OpenAI, API&#x27;sine gönderilen verileri modellerini eğitmek için kullanmadığını ve kötüye kullanım izleme kayıtlarını varsayılan olarak en fazla 30 gün sakladığını; dosyadan konuşma tanıma uç noktası için ise kötüye kullanım izleme amaçlı saklama olmadığını belirtmektedir (<a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener">OpenAI: API&#x27;de veri kontrolleri</a>).</li>
+  <li>ElevenLabs verileri kendi <a href="https://elevenlabs.io/privacy-policy" rel="noopener">gizlilik politikasına</a> göre saklar.</li>
+</ul>
+<p>Kanunun gerektirdiği durumlarda, örneğin bir mahkemeye ya da kamu kurumuna, veri açıklayabiliriz.</p>
+<h3 id="tr-s6">6. Yurt dışına aktarım</h3>
+<p>Sunucularımız ve sağlayıcılarımızın çoğu Türkiye&#x27;nin, AEA&#x27;nın ve Birleşik Krallık&#x27;ın dışındadır. Bu nedenle Verbi&#x27;yi kullandığınızda verileriniz bu sağlayıcılara, yurt dışına aktarılır:</p>
+<ul>
+  <li>Google: ABD (sunucularımız ve depolama alanımız Google Cloud&#x27;un us-central1 bölgesindedir); Firebase verileri Google&#x27;ın tesisi bulunan her yerde işleyebilir.</li>
+  <li>OpenAI: ABD.</li>
+  <li>ElevenLabs: ABD; gizlilik politikasına göre kişisel veriler saklanmak üzere ABD&#x27;ye aktarılır.</li>
+  <li>RevenueCat: ABD.</li>
+  <li>Apple ve Meta: ABD ve faaliyet gösterdikleri diğer ülkeler.</li>
+</ul>
+<p>Her sağlayıcının 5. bölümde bağlantısı verilen gizlilik bilgileri, başka ülkelerden aldığı verileri nasıl koruduğunu açıklar.</p>
+<h3 id="tr-s7">7. Saklama süreleri</h3>
+<ul>
+  <li>Cihazınızdaki kayıt, transkript, özet ve sohbetler: siz silene kadar. Ücretsiz planda kayıtlar 15 gün sonra silinir; &quot;Silinmiş Kayıtlar&quot; 30 gün sonra boşaltılır.</li>
+  <li>Sunucumuzdaki ses: saklanmaz; yalnız istek işlenirken bellekte tutulur.</li>
+  <li>Cloud Storage&#x27;daki YouTube sesi: 1 gün sonra silinir, kalıcı olarak kaldırılmadan önce 7 gün daha geri getirilebilir kalır.</li>
+  <li>Sunucu günlükleri (IP adresi, kullanıcı aracısı, YouTube video başlıkları): 30 gün.</li>
+  <li>Davet kayıtları: silinmesini isteyene kadar (9. bölüm).</li>
+  <li>Google Analytics: olay verisi 2 ay, kullanıcı düzeyindeki veri 14 ay.</li>
+  <li>Çökme raporları: 90 gün.</li>
+  <li>OpenAI, ElevenLabs, RevenueCat, Apple, Meta ve yukarıdakiler dışında Google: 5. bölümde bağlantısı verilen kendi politikalarına göre.</li>
+</ul>
+<h3 id="tr-s8">8. Hukuki sebeplere genel bakış</h3>
+<ul>
+  <li><strong>Sözleşmenin ifası</strong> (KVKK m.5/2-c; GDPR m.6/1-b): transkripsiyon, canlı transkripsiyon, özet, sohbet, çeviri, başlık önerisi, sözlük düzeltmesi, YouTube&#x27;dan içe aktarma, abonelikler ve davet programı.</li>
+  <li><strong>Meşru menfaat</strong> (KVKK m.5/2-f; GDPR m.6/1-f): kullanım analizi, çökme raporları, reklam ilişkilendirmesi (Apple Search Ads, Google Ads bağlantısı, Meta SDK&#x27;sı), davet programında dolandırıcılığın önlenmesi, güvenlik ve sunucu günlükleri. İstediğiniz zaman itiraz edebilirsiniz (9. bölüm); analiz için 4. bölümdeki anahtarı da kullanabilirsiniz.</li>
+  <li><strong>Hukuki yükümlülük</strong> (KVKK m.5/2-ç; GDPR m.6/1-c): kanun gereği veri saklamamız ya da açıklamamız gerektiğinde, örneğin bir mahkemeye ya da kamu kurumuna yanıt verirken, ve veri koruma mevzuatı kapsamındaki başvurularınızı yanıtlarken.</li>
+</ul>
+<h3 id="tr-s9">9. Haklarınız</h3>
+<p>KVKK m.11 uyarınca şu haklara sahipsiniz:</p>
+<ul>
+  <li>kişisel verilerinizin işlenip işlenmediğini öğrenme ve işlenmişse buna ilişkin bilgi isteme;</li>
+  <li>işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme;</li>
+  <li>yurt içinde ya da yurt dışında aktarıldığı üçüncü kişileri bilme;</li>
+  <li>eksik ya da yanlış işlenmişse düzeltilmesini, KVKK m.7&#x27;deki şartlar çerçevesinde silinmesini ya da yok edilmesini ve bu işlemlerin aktarıldığı üçüncü kişilere bildirilmesini isteme;</li>
+  <li>münhasıran otomatik sistemlerle analiz edilmesi sonucunda aleyhinize bir sonuç çıkmasına itiraz etme;</li>
+  <li>kanuna aykırı işleme nedeniyle zarara uğrarsanız zararın giderilmesini talep etme.</li>
+</ul>
+<p>GDPR kapsamındaysanız erişim, düzeltme, silme, işlemenin kısıtlanması, itiraz ve veri taşınabilirliği haklarına da sahipsiniz.</p>
+<p>Haklarınızı nasıl kullanırsınız:</p>
+<ul>
+  <li><strong>Cihazınızdaki veriler:</strong> uygulamada istediğiniz zaman görüntüleyebilir, dışa aktarabilir ya da silebilirsiniz.</li>
+  <li><strong>Kullanım analizi:</strong> Ayarlar &gt; Gizlilik &gt; &quot;Kullanım verilerini paylaş&quot; anahtarını kapatın (4. bölüm).</li>
+  <li><strong>Davet verileri:</strong> davet ekranında görünen davet kodunuzla birlikte theverbiapp@gmail.com adresine yazın. Davet, kod, ödül ve kod kullanım kayıtlarınızı sileriz. Tek bir kaydı, size bağlantısını kaldırarak saklarız: cihazınızda bir ödül alındığına dair kayıt (Android&#x27;de cihaz kimliğinin özeti). Bu kayıt aynı cihazın yeniden ödül almasını engeller. Daha önce verilen Premium günleri geri alınmaz. Ad ya da e-posta adresi tutmadığımız için davet kodunuz olmadan kayıtlarınızı bulamayız.</li>
+  <li><strong>Diğer her şey</strong>, itirazlar ve sunucu günlükleri ya da sağlayıcılarımızdaki verilerle ilgili sorular dahil: theverbiapp@gmail.com adresine yazın.</li>
+</ul>
+<p>Başvurularınızı en geç 30 gün içinde ücretsiz olarak yanıtlarız. Kişisel Verileri Koruma Kurulu&#x27;na şikâyette de bulunabilirsiniz. AEA&#x27;da ya da Birleşik Krallık&#x27;taysanız yaşadığınız ya da çalıştığınız yerin veri koruma otoritesine başvurabilirsiniz.</p>
+<h3 id="tr-s10">10. Kayıtlarınızdaki diğer kişiler</h3>
+<p>Kayıtlarınız başka kişilerin seslerini ve kişisel bilgilerini içerebilir. Onları kaydetme ve transkribe etme hakkınız olduğundan emin olun; kanunun gerektirdiği durumlarda onları bilgilendirin ya da rızalarını alın.</p>
+<h3 id="tr-s11">11. Çocuklar</h3>
+<p>Verbi 16 yaşından küçük çocuklara yönelik değildir ve bu kişilerin kişisel verilerini bilerek toplamayız. 16 yaşından küçük bir çocuğun bize kişisel veri verdiğini düşünüyorsanız bize yazın, verileri sileriz.</p>
+<h3 id="tr-s12">12. Güvenlik</h3>
+<p>Uygulama, sunucularımız ve sağlayıcılarımız arasındaki bağlantılar şifrelidir (HTTPS/TLS). Cihazınızdaki veriler cihazınızın yerleşik depolama korumasıyla korunur. Sunucularımıza erişim geliştiriciyle sınırlıdır. Hiçbir sistem kusursuz değildir; kişisel verilerinizi etkileyen bir ihlal olursa sizi ve yetkili mercileri kanunun öngördüğü şekilde bilgilendiririz.</p>
+<h3 id="tr-s13">13. Kaliforniya&#x27;da yaşayanlar</h3>
+<p>Kişisel bilgilerinizi satmayız. Hangi kişisel bilgileri topladığımızı öğrenme, bunları sildirme ya da düzelttirme ve bu hakları kullandığınız için ayrımcılığa uğramama hakkınız vardır. Bu hakları kullanmak için theverbiapp@gmail.com adresine yazın.</p>
+<h3 id="tr-s14">14. Değişiklikler</h3>
+<p>Verbi&#x27;nin veri uygulamaları değiştiğinde bu metni ve en üstteki &quot;Son güncelleme&quot; tarihini güncelleriz. Önemli değişiklikleri yürürlüğe girmeden önce uygulamada ya da App Store ve Google Play sürüm notlarında duyururuz.</p>
+<h3 id="tr-s15">15. İletişim</h3>
+<p>Mustafa Onur Ilgaz (Verbi), Türkiye: <a href="mailto:theverbiapp@gmail.com">theverbiapp@gmail.com</a></p>
+  </div>
+</article>
+</main>
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span>© 2026 Verbi</span>
+    <nav aria-label="Legal and contact">
+      <a href="https://theverbi.com/">theverbi.com</a>
+      <a href="https://theverbi.com/terms-of-service/">Terms of Service</a>
+      <a href="#tr" lang="tr">Türkçe</a>
+      <span>Contact: <a href="mailto:theverbiapp@gmail.com">theverbiapp@gmail.com</a></span>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
